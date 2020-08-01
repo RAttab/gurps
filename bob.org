@@ -1,0 +1,182 @@
+* Old Bob
+** Background
+Old travelling hobo who enjoys meeting new people and getting into interesting
+situations. Endlessly curious, slightly dumb and generally benevolant. Collects
+random garbage in a duffel bad which he excels at throwing at people. Name has
+shifted over the years and simply goes by Old Bob nowadays.
+
+** Basics
+| Race    | Troll |
+| Gender  | Male  |
+| Age     |       |
+| Birtday |       |
+|---------+-------|
+| Height  |       |
+| Weight  |       |
+| Size    |       |
+| TL      |       |
+|---------+-------|
+| Hair    |       |
+| Eyes    |       |
+| Skin    |       |
+| Hand    |       |
+
+** Points
+| Name       | Value |
+|------------+-------|
+| Attr       |    20 |
+| Advantages |    82 |
+| Skills     |    35 |
+|------------+-------|
+| Total      |   137 |
+| Max        |   137 |
+| Balance    |     0 |
+#+TBLFM: @2$2=remote(attr,@>$4)::@3$2=remote(adv,@>$3)::@4$2=remote(skills,@>$4)::@5$2=vsum(@2..@-1)::@7$2=@6$2-@5$2
+
+** Attributes
+| Name | Value | Max |
+|------+-------+-----|
+| HP   |    15 |  15 |
+| FP   |    10 |  10 |
+
+#+NAME: attr
+| Name        | Value | Bonus | Pts |
+|-------------+-------+-------+-----|
+| ST          |    16 |       |     |
+| DX          |    11 |    +1 |  20 |
+| IQ          |     6 |       |     |
+| HT          |    15 |       |     |
+|-------------+-------+-------+-----|
+| Will        |     5 |       |     |
+| Fright      |     9 |       |     |
+|-------------+-------+-------+-----|
+| Basic Speed |  6.25 |       |     |
+| Basic Move  |     6 |       |     |
+|-------------+-------+-------+-----|
+| Perception  |    10 |       |     |
+|-------------+-------+-------+-----|
+|             |       |       |  20 |
+#+TBLFM: @>$4=vsum(@2..@-1)
+
+** Info
+*** Death
+| Name     |  TR |
+|----------+-----|
+| Reeling  |   4 |
+| Collapse |   0 |
+| Check #1 | -14 |
+| Check #2 | -28 |
+| Check #3 | -42 |
+| Check #4 | -56 |
+| Dead     | -70 |
+
+*** Encumbrance, Move & Dodge
+| Level       | Max Load | Move | Dodge |
+|-------------+----------+------+-------|
+| None (0)    | 10kg     |    6 |    10 |
+| Light (1)   | 20kg     |    4 |     9 |
+| Medium (2)  | 30kg     |    3 |     8 |
+| Heavy (3)   | 60kg     |    2 |     7 |
+| X-Heavy (4) | 100kg    |    1 |     6 |
+
+*** Lifting & Moving Things
+| Name                       | Weight |
+|----------------------------+--------|
+| Basic Lift                 | 10kg   |
+| One-Handed Lift            | 20kg   |
+| Two-Handed Lift            | 80kg   |
+| Shove & Knock Over         | 120kg  |
+| Carry On Back              | 150kg  |
+| Running Shove & Knock Over | 240kg  |
+| Shift Slightly             | 500kg  |
+
+** Attack
+| Ranged | Usage | lvl | Acc | Damage | Range    | RoF | Shots   | Bulk | Rcl | ST |
+|--------+-------+-----+-----+--------+----------+-----+---------+------+-----+----|
+
+
+| Melee   | Usage         | lvl | Parry | Block | Damage  | Reach | ST |
+|---------+---------------+-----+-------+-------+---------+-------+----|
+| Natural | Kick          |  10 | No    |       | 1d-2 cr | c,1   |    |
+| Natural | Kick w/ boots |  10 | No    |       | 1d-1 cr | c,1   |    |
+| Natural | Punch         |  12 | 10    |       | 1d-3 cr | c     |    |
+
+** Advantages / Disadvantages
+#+NAME: adv
+| Name                             | Bonus | Pts | Ref  |
+|----------------------------------+-------+-----+------|
+| Troll                            |       |  80 |      |
+| - HT Bonus                       |    +5 |     |      |
+| - ST Bonus                       |    +6 |     |      |
+| - Damage Resistance 1            |    +1 |     |      |
+| - Infravision                    |       |     |      |
+| - Long Arms (both)               |       |     |      |
+| - Size Modifier Bonus from Troll |       |     |      |
+| - Teeth (sharp)                  |       |     |      |
+| - Apearance                      |       |     |      |
+| - - Dominant Race Humans         |       |     |      |
+| - - Ugly                         |       |     |      |
+| - - IQ Penalty from Troll        |    -4 |     |      |
+| - - Reduced Basic Move           |    -1 |     |      |
+| - - Reduced Will                 |    -1 |     |      |
+|                                  |       |     |      |
+| Arm ST (2 arm)                   |    +1 |   5 | B40  |
+| Lifting ST                       |    +1 |   3 | B65  |
+|                                  |       |     |      |
+| Combat Reflexes                  |       |  15 | B43  |
+| Magic Resistance                 |    +1 |   2 | B67  |
+| Hard to Kill                     |    +1 |   2 | B58  |
+|                                  |       |     |      |
+| Serendipity                      |       |  15 | B83  |
+|                                  |       |     |      |
+| Clueless                         |       | -10 | B126 |
+| Curious                          |       |  -5 | B129 |
+| Weirdness Magnet                 |       | -15 | B161 |
+| Bad Smell                        |       | -10 | B146 |
+|----------------------------------+-------+-----+------|
+|                                  |       |  82 |      |
+#+TBLFM: @>$3=vsum(@2..@-1)
+
+** Skills
+#+NAME: skills
+| Name                          | SL | RSL  | Pts | Ref  |
+|-------------------------------+----+------+-----+------|
+| Area of Knowledge (Balistics) |    | IQ+2 |   4 | B176 |
+|                               |    |      |     |      |
+| Throwing                      | 12 | DX+1 |   4 | B226 |
+| Throwing Art                  | 11 | DX+0 |   4 | B226 |
+| Brawling                      | 12 | DX+1 |   4 | B182 |
+| Fast Draw (Garbage)           | 12 | DX+1 |   2 | B194 |
+| Melee Weapons                 |    |      |   4 | B208 |
+| - Impact Weapons              |    | DX-1 |     |      |
+|                               |    |      |     |      |
+| Lifting                       |    | HT-1 |   1 | B205 |
+| Jumping                       |    | DX-0 |   1 | B203 |
+| Climbing                      |    | DX-1 |   1 | B183 |
+| Running                       |    | HT-1 |   1 | B218 |
+|                               |    |      |     |      |
+| Singing                       |    | HT-0 |   2 | B220 |
+| Scrounging                    |    | Pr+0 |   4 | B218 |
+| Hiking                        |    | HT-1 |   1 | B200 |
+| Intimidation                  |    | WL-1 |   1 | B202 |
+| Liquid Projector (Spit)       |    | DX-0 |   1 | B205 |
+|-------------------------------+----+------+-----+------|
+|                               |    |      |  35 |      |
+#+TBLFM: @>$4=vsum(@2..@-1)
+
+easy: +0
+avg: -1
+hard -2
+vhard: -3
+
+* Inventory
+| # | E | Name | $ | W | Ref |
+|---+---+------+---+---+-----|
+|   |   |      |   |   |     |
+
+| # | Name                 | $ | W | Ref |
+|---+----------------------+---+---+-----|
+|   | Duffel Bag           |   |   |     |
+|   | Assorted Garbage x20 |   |   |     |
+
+* Notes
