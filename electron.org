@@ -1,0 +1,215 @@
+* Edmund "Electron" Fitzer
+** Basics
+| Race    | Elf                    |
+| Gender  | Male                   |
+| Age     | 21                     |
+| Birtday | July 15                |
+|---------+------------------------|
+| Height  | 163cm                  |
+| Weight  | 64kg                   |
+| Size    | +0                     |
+| TL      | 9                      |
+|---------+------------------------|
+| Hair    | Black, Straight, Short |
+| Eyes    | Grey                   |
+| Skin    | Light Brown            |
+| Hand    | Right                  |
+
+** Points
+| Name | Value | Max |
+|------+-------+-----|
+| HP   |    14 |  14 |
+| FP   |    14 |  14 |
+
+| Name        | Value |
+|-------------+-------|
+| ST          |    10 |
+| DX          |    12 |
+| IQ          |    14 |
+| HT          |    12 |
+|-------------+-------|
+| Will        |    13 |
+| Fright      |    15 |
+|-------------+-------|
+| Basic Speed |  6.25 |
+| Basic Move  |     6 |
+|-------------+-------|
+| Perception  |    10 |
+
+** Info
+*** Death
+| Name     |  TR |
+|----------+-----|
+| Reeling  |   4 |
+| Collapse |   0 |
+| Check #1 | -14 |
+| Check #2 | -28 |
+| Check #3 | -42 |
+| Check #4 | -56 |
+| Dead     | -70 |
+
+*** Encumbrance, Move & Dodge
+| Level       | Max Load | Move | Dodge |
+|-------------+----------+------+-------|
+| None (0)    | 10kg     |    6 |    10 |
+| Light (1)   | 20kg     |    4 |     9 |
+| Medium (2)  | 30kg     |    3 |     8 |
+| Heavy (3)   | 60kg     |    2 |     7 |
+| X-Heavy (4) | 100kg    |    1 |     6 |
+
+*** Lifting & Moving Things
+| Name                       | Weight |
+|----------------------------+--------|
+| Basic Lift                 | 10kg   |
+| One-Handed Lift            | 20kg   |
+| Two-Handed Lift            | 80kg   |
+| Shove & Knock Over         | 120kg  |
+| Carry On Back              | 150kg  |
+| Running Shove & Knock Over | 240kg  |
+| Shift Slightly             | 500kg  |
+
+** Attack
+| Ranged | Usage | lvl | Acc | Damage | Range    | RoF | Shots   | Bulk | Rcl | ST |
+|--------+-------+-----+-----+--------+----------+-----+---------+------+-----+----|
+| UZI IV | fired |  12 |   7 |   2d+1 | 180/2000 |  12 | 24 / 24 |   -3 |  -1 | 10 |
+| UZI IV | fired |  12 |   7 |   2d+1 | 180/2000 |  12 | 24 / 24 |   -3 |  -1 | 10 |
+
+
+| Melee   | Usage         | lvl | Parry | Block | Damage  | Reach | ST |
+|---------+---------------+-----+-------+-------+---------+-------+----|
+| Natural | Kick          |  10 | No    |       | 1d-2 cr | c,1   |    |
+| Natural | Kick w/ boots |  10 | No    |       | 1d-1 cr | c,1   |    |
+| Natural | Punch         |  12 | 10    |       | 1d-3 cr | c     |    |
+
+** Advantages / Disadvantages
+| Name                                   |    Bonus | Pts | Ref  |
+|----------------------------------------+----------+-----+------|
+| Elf                                    |          |  50 |      |
+| - Increased Dex 1                      |          |  20 | B15  |
+| - Increased Basic Speed 1              |          |   5 | B17  |
+| - Extended Lifespan 4                  |          |   8 | B53  |
+| - Night Vision 7                       |          |   7 | B71  |
+| - Apearance                            |          |   5 | B21  |
+| - - Universal                          |      25% |     |      |
+| - - Androgynous                        |       +0 |     |      |
+| - - Attractive                         |       +4 |     |      |
+| - Charisma 1                           |          |   5 | B41  |
+| - - influence rolls: +1/level          | +1/level |     |      |
+|                                        |          |     |      |
+| Language: English                      |          |   4 | B24  |
+| - Native                               |       -6 |     |      |
+| - Spoken (Native)                      |       +3 |     |      |
+| - Written (Native)                     |       +3 |     |      |
+| Language: Sperethiel                   |          |   0 | B24  |
+| - Spoken (Accented)                    |       +2 |     |      |
+| - Written (Accented)                   |       +2 |     |      |
+|                                        |          |     |      |
+| Ally: Denver Nexus                     |          |  45 | B36  |
+| - Point Total                          |      +10 |     |      |
+| - Appears Quite Rarely (6-)            |     x0.5 |     |      |
+| - Group of 6-10                        |       x6 |     |      |
+| - Special Abilities                    |     +50% |     |      |
+|                                        |          |     |      |
+| Combat Reflexes                        |          |  15 | B43  |
+| - Never Freezes                        |          |     |      |
+| - IQ rolls to wake up                  |       +6 |     |      |
+| - IQ rolls to recover from surprise    |       +6 |     |      |
+| - IQ rolls to recover from mental stun |       +6 |     |      |
+| - Initiative roll (your side)          |       +1 |     |      |
+| - - if leader                          |       +2 |     |      |
+|                                        |          |     |      |
+| Daredevil                              |          |  15 | B47  |
+|                                        |          |     |      |
+| Thalassophobia (oceans)                |          | -10 | B150 |
+| - CR (resists quite often)             |       12 |     |      |
+|----------------------------------------+----------+-----+------|
+|                                        |          | 119 |      |
+#+TBLFM: @>$3=vsum(@3..@-1)
+
+** Skills
+| Name                                  | SL | RSL  | Pts | Ref  |
+|---------------------------------------+----+------+-----+------|
+| Running                               | 11 | HT-1 |   1 | B218 |
+|                                       |    |      |     |      |
+| Computer Operation/TL9                | 15 | IQ+1 |   2 | B184 |
+| Computer Programming/TL9              | 14 | IQ+0 |   4 | B184 |
+| Computer Hacking/TL9                  | 13 | IQ-1 |   4 | B184 |
+| Computer Programming/TL9 (AI)         | 13 | IQ-1 |   2 | B184 |
+| Electronics Repair/TL9 (Computer)     | 13 | IQ-1 |   1 | B190 |
+| - Default: Computer Operation/TL9 - 3 |    |      |     |      |
+|                                       |    |      |     |      |
+| Knife                                 | 12 | DX+0 |   1 | B208 |
+| Guns/TL9 (Submachine Gun)             | 12 | DX+0 |   1 | B198 |
+|                                       |    |      |     |      |
+| Fast-Draw (Sub-Machinegun)            | 13 | DX+1 |   1 | B194 |
+| Fast-Talk                             | 13 | IQ-1 |   1 | B195 |
+| Fast-Talk                             | 13 | IQ-1 |   1 | B195 |
+|                                       |    |      |     |      |
+| Savoir-Faire (Decker)                 | 14 | IQ+0 |   1 | B218 |
+| Savoir-Faire (Servant)                | 14 | IQ+0 |   1 | B218 |
+|                                       |    |      |     |      |
+| Acting                                | 14 | IQ+0 |   2 | B174 |
+| Connoisseur (Visual Arts)             | 13 | IQ-1 |   1 | B185 |
+| Accounting                            | 12 | IQ-2 |   1 | B174 |
+| Economics                             | 12 | IQ-2 |   1 | B189 |
+| Market Analysis                       | 12 | IQ-2 |   1 | B207 |
+| Dancing                               | 11 | DX-1 |   1 | B187 |
+|                                       |    |      |     |      |
+| Research/TL9                          | 14 | IQ+0 |   2 | B217 |
+| Piloting/TL9 (VTOL)                   | 11 | DX-1 |   1 | B214 |
+|---------------------------------------+----+------+-----+------|
+|                                       |    |      |  31 |      |
+#+TBLFM: @>$4=vsum(@2..@-1)
+
+* Inventory
+| # | E | Name                     |    $ | W       | Ref     |
+|---+---+--------------------------+------+---------+---------|
+| 1 | 1 | Armored Jacket           |  375 | 3kg     | SR5R437 |
+| 2 | 1 | UZI IV (BI: lazer-sight) | 2000 | 2.25kg  | SR5R428 |
+
+| # | Name                                          | $ | W | Ref |
+|---+-----------------------------------------------+---+---+-----|
+| 1 | Financial paydata for Fucci Industrial Denver | ? | ? |     |
+| 1 | Rubber Hammer                                 |   |   |     |
+| 1 | Prototype deodorant (probably)                |   |   |     |
+|   | Bill of security audit                        |   |   |     |
+
+* Notes
+** Session 0
+Mission:
+- Extract Target: Kostas
+- Infiltrated as security consultant which are there fill in the the security
+  audit checklist.
+- Target in gold lab.
+- Extraction on pad with vtol
+
+Recon:
+- In bland room
+- Found microphone in ceiling, pocked with screwdriver and blocked with gum.
+- Decker investigation
+  - Experiment moved to seattle
+  - Spider in building
+  - Already have access to silver lab
+  - Inserted myself into gold lab ACL 
+  - 1 guard patrol in silver lab
+  - Lots of entry and exit from gold lab
+  - Kostas walked into gold lab and hasn't left
+  - Fucked up download of paydata
+  - Alert level 9. Had to dump shock out.
+
+** Session 1
+Ideas:
+- checklist
+  - build security checklist that includes data exfil and getting into gold lab
+  - Make it a last minute update on the checklist
+  - Useit as an excuse if guards get in the way
+
+Mission:
+- Today is Sunday
+- Objective:
+  - extract Kostas
+  - steal deodorant prototype
+- Turns out I'm a traitor. Woot!
+
+- AI mesh with DNA, not human
+- Johnson has keys, likes them way too much...
